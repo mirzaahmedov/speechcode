@@ -52,6 +52,7 @@ const App = () => {
  ]);
 
  recognition.continuous = true;
+ recognition.lang = "en-US";
 
  recognition.onresult = function (e) {
   const text = Array.from(e.results)[e.results.length - 1][0].transcript;
